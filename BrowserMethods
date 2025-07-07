@@ -1,0 +1,10 @@
+get(String url)	                             Opens the specified URL
+getTitle()                                 	 Returns the title of the current page
+getCurrentUrl()	                             Returns the current page URL
+getPageSource()	                             Returns the page's HTML source
+close()	                                     Closes the current browser window
+quit()	                                     Closes all browser windows & ends session
+navigate().to(url)	                         Navigate to another page (similar to get)
+navigate().back()	                           Go back to the previous page
+navigate().forward()	                       Go forward to the next page
+navigate().refresh()	                       Refreshes the current page
