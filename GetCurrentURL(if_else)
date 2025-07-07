@@ -1,0 +1,30 @@
+package BrowserMethods;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GetCurrentURL_if_else {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		
+		String expectedresult = "https://rahulshettyacademy.com/AutomationPractice/";
+		String actualresult = driver.getCurrentUrl();
+		
+		if (expectedresult.equals(actualresult)) {
+			
+			System.out.println(actualresult);
+			
+		}
+		
+		else {
+			
+			System.out.println("Not Found" + actualresult);
+		}
+             driver.quit();
+	}
+
+}
