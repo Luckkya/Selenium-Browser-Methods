@@ -1,0 +1,29 @@
+package BrowserMethods;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GetTitle_if_else {
+
+	public static void main(String[] args) {
+		
+		{
+			WebDriver driver = new ChromeDriver();
+			
+			  driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+			  
+			  String expectedresult = "Practice Page";
+			  String actualresult   =  driver.getTitle();
+			  
+			  if(actualresult.equals(expectedresult)) {
+				  System.out.println(actualresult);				  
+		}
+			  else {
+				System.out.println("Not Found");
+			}
+			  
+			  driver.quit();	
+		
+	}
+
+}}
